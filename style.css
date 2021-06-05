@@ -77,7 +77,7 @@ header {
 }
 #introduction {
   min-height: 350px;
-  margin-top:70px;
+  margin-top:60px;
 }
 .cv-dl-btn, .job-dl-btn {
   font-size: 0.9rem;
@@ -201,6 +201,12 @@ header {
   }
   .header-menu {
     height: 65px!important;
+  }
+  #resume {
+    width: 100%;
+  }
+  .contact-wrap {
+    padding: 10px!important;
   }
 }  
 .width-full {
