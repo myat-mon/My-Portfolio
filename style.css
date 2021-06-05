@@ -1,13 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+html {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #FFF9FC!important;
+  color: #59507D!important;
+  letter-spacing: -0.5px;
+}
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  text-decoration: none;
+}
 .nav-wrapper {
-  width: 80%!important;
+  /* width: 80%!important; */
   padding: 0 3rem;
   display: block;
   margin: auto;
 }
+.letter {
+  color: #B45AD3!important;
+}
 .name-logo {
   font-family: 'Hachi Maru Pop', cursive;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 .fa-bars {
@@ -55,12 +75,19 @@
   background-color: linear-gradient(180deg, #CF86D8 0%, #E1A6FF 100%)!important;
   opacity:0.7;
 }
+#introduction {
+  min-height: 350px;
+  margin-top:70px;
+}
 .cv-dl-btn, .job-dl-btn {
   font-size: 0.9rem;
   padding: 0.8rem;
   background: #F3E6FF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+}
+.cv-dl-btn a, .job-dl-btn a {
+  color: #59507D;
 }
 .job-dl-btn {
   background: #EBE6FA!important;
@@ -71,30 +98,31 @@
 .job-dl-btn:hover {
   background-color: #bcb3e2!important;
 }
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: #FFF9FC!important;
-  color: #59507D!important;
-  letter-spacing: -0.5px;
-}
 /* color-text*/
 .small-text {
   font-size: 0.8rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.055em;
 }
+.title-small-text {
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.055em;
+
+}
 .med-text {
   font-size: 0.85rem;
 }
 .pink_text {
-  color: #B45AD3;
+  color: #B45AD3!important;
 }
 .purple_text {
   color: #59507D;
 }
 .content-title {
   color: #cf86d8;
-  font-size: 1.3rem;
+  font-size: 2.7rem;
   font-weight: bold;
   margin-bottom: -0.3rem;
   text-shadow: 2px 2px 4px rgba(180, 90, 211, 0.3);
@@ -123,6 +151,7 @@ body {
 }
 .introduction-wrap {
   padding: 1rem 1.3rem;
+  margin-top:10px;
 }
 .introduction-wrap p {
   font-size: 0.9rem;
@@ -140,7 +169,10 @@ body {
   }
 }
 .profile-img {
-  width: 51.2%;
+  width: 235px;
+  height: 300px;
+  display: block;
+  margin: auto;
 }
 #resume {
   width: 75%;
@@ -174,12 +206,10 @@ body {
 .width-full {
   width: 100%;
 }
-.overflow-text1 {
-  position:absolute;
-  top: 43%;
-  left: 36%;
+.overflow-text {
+  text-align: center;
 }
-.overflow-text2 {
+/* .overflow-text2 {
   position:absolute;
   top: 43%;
   left: 36%;
@@ -193,7 +223,7 @@ body {
   position:absolute;
   top: 43%;
   left: 36%;
-}
+} */
 .round-img-left {
   position: relative;
   opacity: 0.5;
@@ -207,9 +237,12 @@ body {
   border: solid #593EA4;
 }
 .education-icon-img {
-  width: 15%;
+  width: 20%;
   display: block;
   margin: auto;
+}
+#skill {
+  width: 100%;
 }
 .percent-text1, .percent-text2 {
   /* display: inline; */
@@ -217,9 +250,9 @@ body {
   margin-bottom: 0!important;
   margin-top: 0.5rem;
 }
-.percent-text2 {
-  /* margin-left: 20%; */
-}
+/* .percent-text2 {
+  margin-left: 20%;
+} */
 .large-text {
   font-size: 1.25rem;
 }
@@ -319,7 +352,7 @@ body {
   }
 }
 .container .row.row--large-margin > .col {
-  padding: 0 .5rem 1rem!important;
+  padding: 0 1rem 1rem!important;
 }
 .container .row.row--med-margin > .col {
   padding: 0 .375rem .75rem;
@@ -336,4 +369,53 @@ body {
 }
 .container .row.row--align-height > .col > * {
   height: 100%!important;
+}
+
+/* project */
+fieldset {
+  margin-top:2rem;
+  border: 3px solid#F3E6FF;
+  background: #FFFF;
+  border-radius:10px;
+}
+.fieldset_wrap {
+  margin: 1rem 1.35rem!important;
+}
+.project-title {
+  width: 60%;
+  padding: 1rem 0.8rem;
+  background: #F3E6FF;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+  border-radius: 8px;
+}
+.purble-text {
+  color: #8773C2;
+}
+.pink-purble-text {
+  color: #8773C2;
+}
+.purble_bg_color {
+  background: #ebe6fa;
+}
+.pink_bg_color {
+  background: #f3e6ff;
+}
+.project-description-wrap {
+  border-radius: 10px;
+  padding: 1rem 1.3rem 0.3rem 1.3rem;
+}
+.link-to-site {
+  padding: 0.75rem 0.8rem;
+  background: #EBE6FA;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+  border-radius: 8px;
+  text-align: center;
+}
+.link-to-site a {  
+  color: #59507d!important;
+}
+.contact-wrap {
+  background: #f3e6ff;
+  padding: 30px;
+  text-align: center;
 }
