@@ -40,7 +40,7 @@
         </nav>
       
         <ul class="sidenav" id="mobile-demo">
-          <li><a href="#introduction">自己紹介</a></li>
+          <li><a href="#">自己紹介</a></li>
           <li><a href="#resume">履歴書</a></li>
           <li><a href="#skill">スキル</a></li>
           <li><a href="#project">プロジェクト</a></li>
@@ -51,7 +51,11 @@
           <div class="row mt-4">
             <div class="col s12 m6 l6">
               <div class="introduction-wrap">
-                <div class="content-title">自己紹介</div><span class="title-small-text">introduction</span>
+                <div class="content-title hide-on-small-only">自己紹介</div><span class="title-small-text hide-on-small-only">introduction</span>
+                <div class="introduction-wrap center-align hide-on-med-and-up">
+                  <div class="content-title">自己紹介</div><span class="title-small-text">introduction</span>
+                  <img src="image_svg/profile_img.svg" alt="mmk" class="profile-img ">
+                </div>
                 <p>
                   <span class="large-text">私</span> の名前はミャッモンチョーと申します。国籍はミャンマーです。
                   今24歳で、株式会社イタミアートで業務本部のマーケティング課WEBデザイン班コーデイングチームに勤めています。
@@ -78,11 +82,10 @@
             </div>
             <div class="row row--large-margin row--align-height mt-4">
               <div class="col s12 m6 l6 mt-3">
-                <div class="education-left-col" data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+                <div class="education-left-col" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
                   <div class="education-icon-img mt-2">
-                    <img src="mon.jpg" alt="学歴" class="round-img-left width-full"><br>
+                    <img src="image_svg/university.svg" alt="学歴" class="width-full"><br><!--round-img-left-->
                   </div>
-                  <div class="overflow-text">学歴</div>
                   <div class="center">
                     <div class="sub-title-left mt-2">2013年６月</div>
                     <p class="med-text mt-1">第一、イェウー高等学校　卒業</p>
@@ -96,11 +99,10 @@
                 </div>
               </div>
               <div class="col s12 m6 l6 mt-3">
-                <div class="education-right-col" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
+                <div class="education-right-col" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
                   <div class="education-icon-img mt-2">
-                    <img src="mon.jpg" alt="職歴" class="round-img-right width-full"><br>
+                    <img src="image_svg/job.svg" alt="職歴" class="width-full"><br><!--round-img-right-->
                   </div>
-                  <div class="overflow-text">職歴</div>
                   <div class="center">
                     <div class="sub-title-right mt-2">2018年1月</div>
                     <p class="med-text mt-1">株式会社イタミアート（ミャンマー支社）入社</p>
@@ -115,11 +117,10 @@
               </div>
 
               <div class="col s12 m6 l6 mt-2">
-                <div class="education-left-col" data-aos="fade-right" data-aos-duration="900" data-aos-delay="500">
+                <div class="education-left-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
                   <div class="education-icon-img mt-2">
-                    <img src="mon.jpg" alt="資格" class="round-img-left width-full"><br>
+                    <img src="image_svg/qualification.svg" alt="資格" class="width-full"><br>
                   </div>
-                  <div class="overflow-text">資格</div>
                   <div class="center">
                     <div class="sub-title-left mt-2">2012年６月</div>
                     <p class="med-text mt-1">株式会社イタミアート（ミャンマー支社）入社</p>
@@ -134,11 +135,10 @@
               </div>
 
               <div class="col s12 m6 l6 mt-2">
-                <div class="education-right-col" data-aos="fade-left" data-aos-duration="900" data-aos-delay="500">
+                <div class="education-right-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
                   <div class="education-icon-img mt-2">
-                    <img src="mon.jpg" alt="その他" class="round-img-right width-full"><br>
+                    <img src="image_svg/other.svg" alt="その他" class="width-full"><br>
                   </div>
-                  <div class="overflow-text">その他</div>
                   <div class="center">
                     <p class="med-text mt-1">Microsoft Word, Excel, PowerPoint</p>
 
@@ -247,10 +247,10 @@
               <div class="content-title center-align">プロジェクト</div><span class="title-small-text">project</span>
             </div>
             <div class="center-align mt-2">仕事で制作した案件サイト、仕事内容を掲載しています。</div>
-            <div class="row row--align-height">
+            <div class="row row--large-margin row--align-height ">
               <div class="col s12 m12 l6 mt-3" data-aos="fade-up-right" data-aos-duration="700">
                 <fieldset>
-                  <legend class="project-title center-align bold-text">自社サイト作成</legend>
+                  <legend class="project-title left-wrap-color center-align bold-text">自社サイト作成</legend>
                   <div class="fieldset_wrap">
                     <div class="project-description-wrap purble_bg_color">
                       <span class="bold-text purble-text">注文ページ作成、通販商品サイト制作、リニューアルサイトの制作、運用サイトの更新</span>
@@ -267,13 +267,13 @@
                       デザインの部分で、いくつか同じデザインの派生ページが発生した為、マークアップ・スタイル記述はパーツを細分化して、どのブロックでも使える形でコーディング。注文ページ制作の際には、PHPやjQueryを使ったことがあけど、あまり詳しくないので、分からないことがる時はネット上での検索や自習しながらタスク対応しました。
                     </p>
                     
-                    <div class="link-to-site "><a href="">自社サイトを見</a></div>
+                    <div class="link-to-site left-wrap-color"><a href="">自社サイトを見</a></div>
                   </div>                  
                 </fieldset>
               </div>
               <div class="col s12 m12 l6 mt-3" data-aos="fade-up-left" data-aos-duration="700">
                 <fieldset>
-                  <legend class="project-title center-align bold-text">レスポンシブ対応</legend>
+                  <legend class="project-title right-wrap-color center-align bold-text">レスポンシブ対応</legend>
                   <div class="fieldset_wrap">
                     <div class="project-description-wrap pink_bg_color">
                       <span class="bold-text pink_text">注文ページ作成、通販商品サイト制作、リニューアルサイトの制作、運用サイトの更新</span>
@@ -290,7 +290,7 @@
                       デザインの部分で、いくつか同じデザインの派生ページが発生した為、マークアップ・スタイル記述はパーツを細分化して、どのブロックでも使える形でコーディング。注文ページ制作の際には、PHPやjQueryを使ったことがあけど、あまり詳しくないので、分からないことがる時はネット上での検索や自習しながらタスク対応しました。
                     </p>
                     
-                    <div class="link-to-site"><a href="">自社サイトを見</a></div>
+                    <div class="link-to-site right-wrap-color"><a href="">自社サイトを見</a></div>
                   </div>
   
                 </fieldset>
@@ -298,7 +298,7 @@
             
             <div class="col s12 m12 l6 mt-3">
               <fieldset>
-                <legend class="project-title center-align bold-text">自社公式サイト</legend>
+                <legend class="project-title left-wrap-color center-align bold-text">自社公式サイト</legend>
                 <div class="fieldset_wrap">
                   <div class="project-description-wrap purble_bg_color">
                     <span class="bold-text purble-text">自社HP制作、採用サイト、オウンドメディアページ作成</span>
@@ -314,14 +314,14 @@
                     必要であれば、サイト内に新しいCSSやJavaScriptの追加も行いました。
                   </p>
                   
-                  <div class="link-to-site "><a href="">自社サイトを見</a></div>
+                  <div class="link-to-site left-wrap-color"><a href="">自社サイトを見</a></div>
 
                 </div>                  
               </fieldset>
             </div>
             <div class="col s12 m12 l6 mt-3">
               <fieldset>
-                <legend class="project-title center-align bold-text">のぼり旗デザイン製作</legend>
+                <legend class="project-title right-wrap-color center-align bold-text">のぼり旗デザイン製作</legend>
                 <div class="fieldset_wrap">
                   <div class="project-description-wrap pink_bg_color">
                     <span class="bold-text pink_text">お客様のデザイン依頼の対応</span>
@@ -349,19 +349,19 @@
               <div class="content-title center-align">お問合せ</div><span class="title-small-text">contact</span>
             </div>
             <div class="center-align mt-2">お電話またはメールでのご相談は下記までお願いいたします。</div>
-            <div class="row row--med-margincenter-align">
-              <div class="col s5 m6 l6">
-                <div class="contact-wrap left mt-2">
+            <div class="row row--large-margin row--align-height center-align">
+              <div class="col s12 m6 l6">
+                <div class="contact-wrap mt-2">
                   <div class="education-icon-img">
-                    <!-- <img src="mon.jpg" alt="" class="round-img-left width-full"><span class="overflow-text3">資格</span> -->
+                    <img src="image_svg/mobileicon.svg" alt="携帯">
                   </div>
-                  <a href="" class="sub-title-left">090-9739-7288</a>
+                  <a href="tel:+8109097397288" class="sub-title-left">090-9739-7288</a>
                 </div>
               </div>
-              <div class="col s7 m6 l6">
-                <div class="contact-wrap right mt-2">
+              <div class="col s12 m6 l6">
+                <div class="contact-wrap mt-2">
                   <div class="education-icon-img">
-                    <!-- <img src="mon.jpg" alt="" class="round-img-left width-full"><span class="overflow-text3">資格</span> -->
+                    <img src="image_svg/mailicon.svg" alt="メール">
                   </div>
                   <a href="mailto:myatmonkyaw26@gmail.com" class="sub-title-right">myatmonkyaw26@gmail.com</a>
                 </div>
@@ -373,7 +373,7 @@
       </footer>
 
       <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="materialize-src/js/bin/materialize.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script type="text/javascript" src="script/main.js"></script>
