@@ -27,7 +27,7 @@ header {
   color: #B45AD3!important;
 }
 .name-logo {
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Hachi Maru Pop', cursive!important;
   font-size: 2.2rem;
   font-weight: 600;
 }
