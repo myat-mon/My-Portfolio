@@ -13,14 +13,12 @@ a:hover {
   opacity:0.7;
 }
 header {
-  /* position: fixed; */
   z-index: 10;
   top: 0;
   width: 100%;
   text-decoration: none;
 }
 .nav-wrapper {
-  /* width: 80%!important; */
   padding: 0 3rem;
   display: block;
   margin: auto;
@@ -102,9 +100,14 @@ header {
   background-color: #bcb3e2!important;
 }
 /* color-text*/
+.small-nav-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.055em;
+
+}
 .small-text {
   font-size: 0.8rem;
-  font-family: 'Montserrat', sans-serif;
+  color: #B3AAD7!important;
   letter-spacing: 0.055em;
 }
 .title-small-text {
