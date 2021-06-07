@@ -19,6 +19,7 @@ header {
   text-decoration: none;
 }
 .nav-wrapper {
+  width: 1100px;
   padding: 0 3rem;
   display: block;
   margin: auto;
@@ -112,6 +113,7 @@ header {
 }
 .title-small-text {
   font-size: 1.5rem;
+  line-height: 0.15;
   color: #B3AAD7!important;
   letter-spacing: 0.055em;
 
@@ -127,7 +129,7 @@ header {
 }
 .content-title {
   color: rgba(207, 134, 216, 1);
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: -0.3rem;
   text-shadow: 2px 2px 4px rgba(180, 90, 211, 0.3);
@@ -155,7 +157,7 @@ header {
   background-color: #E3D6F7;
 }
 .introduction-wrap {
-  padding: 1rem 1.3rem;
+  padding: 1rem 1.3rem 1rem 8rem;
   margin-top:10px;
 }
 .introduction-wrap p {
@@ -177,10 +179,10 @@ header {
   width: 235px;
   height: 300px;
   display: block;
-  margin: auto;
+  /* margin: auto; */
 }
 #resume {
-  width: 75%;
+  width: 635px;
   display: block;
   margin: auto;
 }
@@ -229,12 +231,12 @@ header {
   text-align: center;
 }
 .education-icon-img {
-  width: 20%;
+  width: 23%;
   display: block;
   margin: auto;
 }
 #skill {
-  width: 100%;
+  width: 980px;
 }
 .percent-text1, .percent-text2 {
   /* display: inline; */
@@ -262,6 +264,9 @@ header {
 }
 .mt-4 {
   margin-top: 2rem!important;
+}
+.mb-0 {
+  margin-bottom: 0!important;
 }
 .mb-1 {
   margin-top: 0.5rem!important;
@@ -365,7 +370,7 @@ header {
 
 /* project */
 #project {
-  width: 85%;
+  width: 980px;
   display: block;
   margin: auto;
 }
@@ -432,4 +437,42 @@ fieldset {
   padding: 30px;
   text-align: center;
   border-radius: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  margin: 5px 2px;
+}
+.tag {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 10px 20px; */
+  background: #ffffff94;
+  box-shadow: 0px 20px 30px rgb(25 25 46 / 10%);
+  border-radius: 16px;
+  width: fit-content;
+  /* margin: 5px 3px; */
+  position: relative;
+}
+
+.skills-wrapper {
+  padding: 10px 20px;
+}
+@media only screen and (max-width: 900px){
+  .skills-wrapper {
+    padding: 5px 2px;
+    text-align: center;
+  }
+}
+
+.tag-icon {
+  width: 25px;
+  height: 29px;
+}
+@media only screen and (max-width: 900px){
+  .tag-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
