@@ -200,7 +200,13 @@ header {
 .skill-title  {
   font-size:1.5rem;
 }
+#skill {
+  width: 980px;
+}
 @media (max-width: 600px){
+  #skill {
+    width: 350px!important;
+  }
   .education-left-col, .education-right-col {
     padding: 1.5rem 1rem 4rem 1rem;
   }
@@ -237,9 +243,6 @@ header {
   width: 23%;
   display: block;
   margin: auto;
-}
-#skill {
-  width: 980px;
 }
 .percent-text1, .percent-text2 {
   /* display: inline; */
@@ -307,7 +310,8 @@ header {
   margin-left: 0;
   margin-right: 0;
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) {  
+
   .container .row.row--full-width-med-and-up {
       margin-left: -.75rem;
       margin-right: -.75rem;
