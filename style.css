@@ -52,7 +52,7 @@ header {
   color: #59507D!important;
   /* margin-right: 2rem!important; */
 } 
-.header-menu ul a:hover {
+.header-menu ul button a:hover {
   background-color: #d591e542!important;
 }
 .header-menu ul li {
