@@ -60,6 +60,9 @@ header {
   line-height: 1.5!important;
   margin-top: 1rem;
 }
+.header-menu ul li a:hover {
+  background-color: rgb(255 249 252)!important;
+}
 /* 問い合わせ  */
 .contact-btn {
   margin-top: 0.6rem;
