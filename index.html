@@ -1,488 +1,516 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta charset="UTF-8" />
-      <meta name="description" content="Portfolio"/>
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-      <meta name="keywords" content="" />
-      <meta name="robots" content="index, follow" />
-      <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/dusk/64/000000/passenger-with-baggage.png" />
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" type="text/css" href="skill_map_style.css">
-      
-      <link rel="preconnect" href="https://fonts.gstatic.com">      
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
-      
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-      <title>MMK' Portfolio</title>
-    </head>
+<html>
 
-    
-    <body>
-      <header>
-        <nav class="header-menu">
-          <div class="nav-wrapper">
-            <a href="#!" class="name-logo"><span class="pink_text">MMK'</span><span class="purple_text">Portfolio</span></a>
-            <a href="#mobile-demo" data-target="mobile-demo" class="sidenav-trigger" id="sidenav-trigger"><i class="fas fa-bars"></i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#introduction"><span class="nav-text">自己紹介</span><br><span class="small-nav-text">introduction</span></a></li>
-              <li><a href="#resume"><span class="nav-text">履歴書</span><br><span class="small-nav-text">resume</span></a></li>
-              <li><a href="#skill"><span class="nav-text">スキル</span><br><span class="small-nav-text">skill</span></a></li>
-              <li><a href="#project"><span class="nav-text">プロジェクト</span><br><span class="small-nav-text">project</span></a></li>
-              <button class="contact-btn waves-effect waves-light"><a href="#contact" class="contact-btn-link"><span class="white-text">問い合わせ</span></a></button>
-            </ul>          
-          </div>
-        </nav>
-      
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="#">自己紹介</a></li>
-          <li><a href="#resume">履歴書</a></li>
-          <li><a href="#skill">スキル</a></li>
-          <li><a href="#project">プロジェクト</a></li>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="description" content="Portfolio" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta name="keywords" content="" />
+  <meta name="robots" content="index, follow" />
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://img.icons8.com/dusk/64/000000/passenger-with-baggage.png" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="skill_map_style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <title>MMK' Portfolio</title>
+</head>
+
+
+<body>
+  <header>
+    <nav class="header-menu">
+      <div class="nav-wrapper">
+        <a href="#!" class="name-logo"><span class="pink_text">MMK'</span><span class="purple_text">Portfolio</span></a>
+        <a href="#mobile-demo" data-target="mobile-demo" class="sidenav-trigger" id="sidenav-trigger"><i
+            class="fas fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#introduction"><span class="nav-text">自己紹介</span><br><span
+                class="small-nav-text">introduction</span></a></li>
+          <li><a href="#resume"><span class="nav-text">履歴書</span><br><span class="small-nav-text">resume</span></a></li>
+          <li><a href="#skill"><span class="nav-text">スキル</span><br><span class="small-nav-text">skill</span></a></li>
+          <li><a href="#project"><span class="nav-text">プロジェクト</span><br><span class="small-nav-text">project</span></a>
+          </li>
+          <button class="contact-btn waves-effect waves-light"><a href="#contact" class="contact-btn-link"><span
+                class="white-text">問い合わせ</span></a></button>
         </ul>
-      </header>
-      <section id="introduction" class="intro-section" >
-        <div class="container" >
-          <div class="row mt-4">
-            <div class="col s12 m6 l6">
-              <div class="introduction-wrap">
-                <div class="content-title hide-on-small-only">自己紹介</div><span class="title-small-text hide-on-small-only">introduction</span>
-                <div class="introduction-wrap center-align hide-on-med-and-up">
-                  <div class="content-title">自己紹介</div><span class="title-small-text">introduction</span>
-                  <img src="image_svg/profile_img.jpg" alt="mmk" class="profile-img ">
-                </div>
-                <p>
-                  <span class="large-text">私</span> の名前はミャッモンチョーと申します。国籍はミャンマーです。
-                  今24歳で、株式会社イタミアートで業務本部のマーケティング課WEBデザイン班コーデイングチームに勤めています。
-                </p>
-                <p>
-                  <span class="large-text">趣味</span> は写真を撮ること、動画を見ること、歌を聴くことです。
-                  全く知らないこと、慣れていないことなどをチャレジして自分の出来る範囲を広げるのが強みです。
-                </p>
-              </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">自己紹介</a></li>
+      <li><a href="#resume">履歴書</a></li>
+      <li><a href="#skill">スキル</a></li>
+      <li><a href="#project">プロジェクト</a></li>
+    </ul>
+  </header>
+  <section id="introduction" class="intro-section">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col s12 m6 l6">
+          <div class="introduction-wrap">
+            <div class="content-title hide-on-small-only">自己紹介</div><span
+              class="title-small-text hide-on-small-only">introduction</span>
+            <div class="introduction-wrap center-align hide-on-med-and-up">
+              <div class="content-title">自己紹介</div><span class="title-small-text">introduction</span>
+              <img src="image_svg/profile_img.jpg" alt="mmk" class="profile-img ">
             </div>
-            <div class="profile-img-col col s12 m6 l6">
-              <div class="introduction-wrap">                
-                <img src="image_svg/profile_img.jpg" alt="mmk" class="profile-img hide-on-small-only">
-              </div>
+            <p>
+              <span class="large-text">私</span> の名前はミャッモンチョーと申します。国籍はミャンマーです。
+              今24歳で、株式会社イタミアートで業務本部のマーケティング課WEBデザイン班コーデイングチームに勤めています。
+            </p>
+            <p>
+              <span class="large-text">趣味</span> は写真を撮ること、動画を見ること、歌を聴くことです。
+              全く知らないこと、慣れていないことなどをチャレジして自分の出来る範囲を広げるのが強みです。
+            </p>
+          </div>
+        </div>
+        <div class="profile-img-col col s12 m6 l6">
+          <div class="introduction-wrap">
+            <img src="image_svg/profile_img.jpg" alt="mmk" class="profile-img hide-on-small-only">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div id="resume" class="section">
+      <div class="center-align mt-4 mb-3">
+        <div class="content-title">履歴書</div><span class="title-small-text">resume</span>
+      </div>
+      <div class="row row--large-margin row--align-height mt-4">
+        <div class="col s12 m6 l6 mt-3">
+          <div class="education-left-col" data-aos="flip-left" data-aos-duration="700" data-aos-delay="500">
+            <div class="education-icon-img mt-2">
+              <img src="image_svg/university.svg" alt="学歴" class="width-full"><br>
+              <!--round-img-left-->
+            </div>
+            <div class="center">
+              <div class="sub-title-left mt-2">2013年６月</div>
+              <p class="med-text mt-1">第一、イェウー高等学校　卒業</p>
+
+              <div class="sub-title-left mt-1">2013年12月</div>
+              <p class="med-text mt-1">ヤンゴン外国語大学（日本語専門）入学</p>
+
+              <div class="sub-title-left mt-1">2018年1月</div>
+              <p class="med-text mt-1">ヤンゴン外国語大学（日本語専門）卒業</p>
             </div>
           </div>
         </div>
-      </section>
-
-        <div class="container">
-          <div id="resume" class="section">
-            <div class="center-align mt-4 mb-3">
-              <div class="content-title">履歴書</div><span class="title-small-text">resume</span>
+        <div class="col s12 m6 l6 mt-3">
+          <div class="education-right-col" data-aos="flip-right" data-aos-duration="700" data-aos-delay="500">
+            <div class="education-icon-img mt-2">
+              <img src="image_svg/job.svg" alt="職歴" class="width-full"><br>
+              <!--round-img-right-->
             </div>
-            <div class="row row--large-margin row--align-height mt-4">
-              <div class="col s12 m6 l6 mt-3">
-                <div class="education-left-col" data-aos="zoom-out-right" data-aos-duration="700" data-aos-delay="500">
-                  <div class="education-icon-img mt-2">
-                    <img src="image_svg/university.svg" alt="学歴" class="width-full"><br><!--round-img-left-->
-                  </div>
-                  <div class="center">
-                    <div class="sub-title-left mt-2">2013年６月</div>
-                    <p class="med-text mt-1">第一、イェウー高等学校　卒業</p>
-                    
-                    <div class="sub-title-left mt-1">2013年12月</div>
-                    <p class="med-text mt-1">ヤンゴン外国語大学（日本語専門）入学</p>
-                    
-                    <div class="sub-title-left mt-1">2018年1月</div>
-                    <p class="med-text mt-1">ヤンゴン外国語大学（日本語専門）卒業</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6 l6 mt-3">
-                <div class="education-right-col" data-aos="zoom-out-left" data-aos-duration="700" data-aos-delay="500">
-                  <div class="education-icon-img mt-2">
-                    <img src="image_svg/job.svg" alt="職歴" class="width-full"><br><!--round-img-right-->
-                  </div>
-                  <div class="center">
-                    <div class="sub-title-right mt-2">2018年1月</div>
-                    <p class="med-text mt-1">株式会社イタミアート（ミャンマー支社）入社</p>
-  
-                    <div class="sub-title-right mt-1">2019年10月</div>
-                    <p class="med-text mt-1">株式会社イタミアート（岡山本社）転勤</p>
-                    
-                    <div class="sub-title-right mt-1">現在</div>
-                    <p class="med-text mt-1">株式会社イタミアート（岡山本社）</p>
-                  </div>
-                </div>
-              </div>
+            <div class="center">
+              <div class="sub-title-right mt-2">2018年1月</div>
+              <p class="med-text mt-1">株式会社イタミアート（ミャンマー支社）入社</p>
 
-              <div class="col s12 m6 l6 mt-2">
-                <div class="education-left-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
-                  <div class="education-icon-img mt-2">
-                    <img src="image_svg/qualification.svg" alt="資格" class="width-full"><br>
-                  </div>
-                  <div class="center">
-                    <div class="sub-title-left mt-2">2017年 3月</div>
-                    <p class="med-text mt-1">UCS Account Software(MKS)Training Course</p>
+              <div class="sub-title-right mt-1">2019年10月</div>
+              <p class="med-text mt-1">株式会社イタミアート（岡山本社）転勤</p>
 
-                    <div class="sub-title-left mt-2">2017年 4月</div>
-                    <p class="med-text mt-1">日本語能力試験N-2 取得</p>
-  
-                    <div class="sub-title-left mt-2">2018年 4月</div>
-                    <p class="med-text mt-1">日本語能力試験N-1 取得</p>
-                    
-                    <div class="sub-title-left mt-1">2019年 8月</div>
-                    <p class="med-text mt-1">Web Application Development with Java Course修了</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col s12 m6 l6 mt-2">
-                <div class="education-right-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
-                  <div class="education-icon-img mt-2">
-                    <img src="image_svg/other.svg" alt="その他" class="width-full"><br>
-                  </div>
-                  <div class="center">
-                    <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/html5.svg" alt="HTML5">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/css3.svg" alt="CSS3">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/sass.svg" alt="SASS">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/bootstrap.svg" alt="Bootstrap">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/xd.svg" alt="Adobe XD">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/figma.svg" alt="Figma">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/ai.svg" alt="Illustrator">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/javascript.svg" alt="Javascript">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/php.svg" alt="PHP">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/mysql.svg" alt="MYSQL">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/git.svg" alt="Git">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/docker.svg" alt="Docker">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/wordpress.svg" alt="WordPress">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/materialize.svg" alt="Materialize">
-                      </div>
-                      <div class="tag">
-                        <img class="tag-icon" src="assets/svg/photoshop.svg" alt="Photoshop">
-                      </div>
-                    </div>
-
-                  </div>
-              </div>
-            </div>
-              
-              <div class="col s12 skill-title center-align bold-text mt-3">履歴書と職務経歴書ダウンロード</div>
-              <div class="col s12 m6 mt-3" data-aos="fade-up" data-aos-duration="800">
-                <div class="cv-dl-btn center-align"><a href="download_file/resume.pdf">履歴書ダウンロード</a></div>
-              </div>
-              <div class="col s12 m6 mt-3" data-aos="fade-up" data-aos-duration="1000">
-                <div class="job-dl-btn center-align"><a href="download_file/job_career.pdf">職務経歴書</a></div>
-              </div>
-            </div>
-          </div>
-  
-          <div id="skill" class="container">
-            <div class="center-align mt-4 mb-4">
-              <div class="content-title center-align">スキル</div><span class="title-small-text">skill</span>
-            </div>
-            <div class="row row--large-margin">
-              <div class="col s12 m6 l6">
-                <div class="skill-title bold-text">Web知識</div>
-                <div class="skill-bars">
-                  <div class="bar" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-delay="500">
-                    <div class="info"><span>HTML</span></div>
-                    <div class="progress-line html"><span></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="700" data-aos-delay="700">
-                    <div class="info"><span>CSS</span></div>
-                    <div class="progress-line css"><span></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="900" data-aos-delay="900">
-                    <div class="info"><span>Responsive site</span></div>
-                    <div class="progress-line responsive"><span></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1200" data-aos-delay="1200">
-                    <div class="info"><span>WordPress</span></div>
-                    <div class="progress-line wordpress"><span></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1400" data-aos-delay="1400">
-                    <div class="info"><span>PHP</span></div>
-                    <div class="progress-line php"><span></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1600" data-aos-delay="1600">
-                    <div class="info"><span>JavaScript</span></div>
-                    <div class="progress-line javascript"><span></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1800" data-aos-delay="1800">
-                    <div class="info"><span>Jquery</span></div>
-                    <div class="progress-line jquery"><span></span></div>
-                  </div>
-                </div>
-              </div>
-                
-              <div class="col s12 m6 l6">                 
-                <div class="skill-title bold-text">Webに関するツール</div>
-                <div class="skill-bars"> 
-                  <div class="bar" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-delay="500">
-                    <div class="info"><span>DreamWeaver</span></div>
-                    <div class="progress-line dreamWeaver"><span class="pink_bar"></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="700" data-aos-delay="500">
-                    <div class="info"><span>4DBox</span></div>
-                    <div class="progress-line dbox"><span class="pink_bar"></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="900" data-aos-delay="500">
-                    <div class="info"><span>Adobe Illustrator</span></div>
-                    <div class="progress-line illu"><span class="pink_bar"></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1200" data-aos-delay="500">
-                    <div class="info"><span>Adobe Photoshop</span></div>
-                    <div class="progress-line photo-shop"><span class="pink_bar"></span></div>
-                  </div>
-                </div>
-
-                <div class="skill-title bold-text">話せる言語</div>
-                <div class="skill-bars"> 
-                  <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1400" data-aos-delay="500">
-                    <div class="info"><span>ミャンマー語</span></div>
-                    <div class="progress-line myan"><span class="pink_bar"></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1600" data-aos-delay="500">
-                    <div class="info"><span>日本語</span></div>
-                    <div class="progress-line japan"><span class="pink_bar"></span></div>
-                  </div>
-                  <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1800" data-aos-delay="500">
-                    <div class="info"><span>英語</span></div>
-                    <div class="progress-line english"><span class="pink_bar"></span></div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-          
-          <div id="project" class="section mt-4">
-            <div class="center-align mb-3">
-              <div class="content-title center-align">プロジェクト</div><span class="title-small-text">project</span>
-            </div>
-            <div class="center-align mt-2">仕事で制作した案件サイト、仕事内容を掲載しています。</div>
-            <div class="row row--large-margin row--align-height ">
-              <div class="col s12 m12 l6 mt-3" data-aos="fade-up-right" data-aos-duration="700">
-                <fieldset>
-                  <legend class="project-title left-wrap-color center-align bold-text">自社サイト作成</legend>
-                  <div class="fieldset_wrap">
-                    <div class="project-description-wrap purble_bg_color">
-                      <span class="bold-text purble-text">注文ページ作成、通販商品サイト制作、リニューアルサイトの制作、運用サイトの更新</span>
-                      <p class="small-text mt-1 mb-0">
-                        使用技術：<br>
-                        <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/html5.svg" alt="HTML5"><span class="tag-name">HTML5</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/css3.svg" alt="CSS3"><span class="tag-name">CSS3</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/javascript.svg" alt="Javascript"><span class="tag-name">Javascript</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/php.svg" alt="PHP"><span class="tag-name">PHP</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/jquery.svg" alt="jQuery"><span class="tag-name">jQuery</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/materialize.svg" alt="Materialize"><span class="tag-name">Materialize</span>
-                          </div>
-                        </div>
-                        制作期間：ページ内容によって（2日～1ヶ月）<br>
-                        担当役割：コーディングを担当
-                      </p>
-                    </div>
-                    <p class="bold-text">内容説明</p>
-                    <p>
-                      既に公開されているサイトのリニューアル制作や新商品の注文ペー
-                      ジ作成は案件となり、商品販売ページは通販専用ツールを用いて制作。複数人でコーディングを行う体制だったので、この案件のみに適用するコーディングルールを設け制作を進めた。
-                      デザインの部分で、いくつか同じデザインの派生ページが発生した為、マークアップ・スタイル記述はパーツを細分化して、どのブロックでも使える形でコーディング。注文ページ制作の際には、PHPやjQueryを使ったことがあけど、あまり詳しくないので、分からないことがる時はネット上での検索や自習しながらタスク対応しました。
-                    </p>
-                    
-                    <div class="link-to-site left-wrap-color"><a href="https://www.i-nobori.com/">自社サイトを見る</a></div>
-                  </div>                  
-                </fieldset>
-              </div>
-              <div class="col s12 m12 l6 mt-3" data-aos="fade-up-left" data-aos-duration="700">
-                <fieldset>
-                  <legend class="project-title right-wrap-color center-align bold-text">レスポンシブ対応</legend>
-                  <div class="fieldset_wrap">
-                    <div class="project-description-wrap pink_bg_color">
-                      <span class="bold-text pink_text">新商品クッションページコーディング、ランディングページ制作、コラムページコーディング</span>
-                      <p class="small-text mt-1 mb-0">
-                        使用技術：<br>
-                        <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/html5.svg" alt="HTML5"><span class="tag-name">HTML5</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/css3.svg" alt="CSS3"><span class="tag-name">CSS3</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/javascript.svg" alt="Javascript"><span class="tag-name">Javascript</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/php.svg" alt="PHP"><span class="tag-name">PHP</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/jquery.svg" alt="jQuery"><span class="tag-name">jQuery</span>
-                          </div>
-                          <div class="tag">
-                            <img class="tag-icon" src="assets/svg/materialize.svg" alt="Materialize"><span class="tag-name">Materialize</span>
-                          </div>
-                        </div>
-                        制作期間：ページ内容によって（2日～5日）<br>
-                        担当役割：コーディングを担当
-                      </p>
-                    </div>
-                    <p class="bold-text">内容説明</p>
-                    <p>
-                      のぼり旗や横断幕、タペストリー等印刷系の販促グッズを紹介する広告用ランディングページや商品のクッションページのレスポンシブ対応を制作。
-                      基本はデザインの方からもらったラフを参考に作成。HTML側の記述はソース構造を複雑化しない様に心掛け、CSS側はモバイルファーストで組み込みを行い、テキストもなるべくCSSで再現できる部分は対応を行った。またブレイクポイントがPC/SPのみの指定だったがタブレットで閲覧することも想像し、基本SPデザインを表示しつつ見易さの部分を配慮してCSS調整を行った。レスポンシブの対応自体はメディアクエリやMaterializeを使っている。
-                    </p>
-                    
-                    <div class="link-to-site right-wrap-color"><a href="https://www.i-maku.com/page/lp_ashiba">LPページを見る</a></div>
-                  </div>
-  
-                </fieldset>
-            </div>
-            
-            <div class="col s12 m12 l6 mt-3" data-aos="zoom-out-right" data-aos-duration="700">
-              <fieldset>
-                <legend class="project-title left-wrap-color center-align bold-text">自社公式サイト</legend>
-                <div class="fieldset_wrap">
-                  <div class="project-description-wrap purble_bg_color">
-                    <span class="bold-text purble-text">自社HP、採用サイト、オウンドメディアページ作成</span>
-
-                    <p class="small-text mt-1 mb-0">
-                      使用技術：<br>
-                      <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-                        <div class="tag">
-                          <img class="tag-icon" src="assets/svg/html5.svg" alt="HTML5"><span class="tag-name">HTML5</span>
-                        </div>
-                        <div class="tag">
-                          <img class="tag-icon" src="assets/svg/css3.svg" alt="CSS3"><span class="tag-name">CSS3</span>
-                        </div>
-                        <div class="tag">
-                          <img class="tag-icon" src="assets/svg/javascript.svg" alt="Javascript"><span class="tag-name">Javascript</span>
-                        </div>
-                        <div class="tag">
-                          <img class="tag-icon" src="assets/svg/php.svg" alt="PHP"><span class="tag-name">PHP</span>
-                        </div>                     
-                        <div class="tag">
-                          <img class="tag-icon" src="assets/svg/wordpress.svg" alt="WordPress"><span class="tag-name">WordPress</span>
-                        </div>
-                      </div>
-                      制作期間：約1ヶ月～2ヶ月<br>
-                      担当役割：コーディングを担当
-                    </p>
-
-                  </div>
-
-                  
-
-                  <p class="bold-text">内容説明</p>
-                  <p>
-                    WordPress使用の自社公式サイトや採用サイト、オウンドメディアサイトの作成。WordPressテーマのカスタマイズやプラグインの使用で、サイト修正やページ追加を対応しました。
-                    必要であれば、サイト内に新しいCSSやJavaScriptの追加も行いました。
-                  </p>
-                  
-                  <div class="link-to-site left-wrap-color"><a href="https://www.itamiarts.co.jp/">公式サイトを見る</a></div>
-
-                </div>                  
-              </fieldset>
-            </div>
-            <div class="col s12 m12 l6 mt-3" data-aos="zoom-out-left" data-aos-duration="700">
-              <fieldset>
-                <legend class="project-title right-wrap-color center-align bold-text">のぼり旗デザイン製作</legend>
-                <div class="fieldset_wrap">
-                  <div class="project-description-wrap pink_bg_color">
-                    <span class="bold-text pink_text">お客様のデザイン依頼の対応</span>
-                    <p class="small-text mt-1 mb-0">
-                      使用技術：<br>
-                      <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-                        <div class="tag">
-                          <img class="tag-icon" src="assets/svg/ai.svg" alt="Illustrator"><span class="tag-name">Illustrator</span>
-                        </div>
-                        <div class="tag">
-                          <img class="tag-icon" src="assets/svg/xd.svg" alt="Adobe XD"><span class="tag-name">Adobe XD</span>
-                        </div>
-                        <div class="tag">
-                          <img class="tag-icon" src="assets/svg/photoshop.svg" alt="Photoshop"><span class="tag-name">Photoshop</span>
-                        </div>
-                      </div>
-                      制作期間：デザインによって（1日～2日）<br>
-                      担当役割：デザイン制作
-                    </p>
-                  </div>
-                  <p class="bold-text">内容説明</p>
-                  <p>
-                    Adobe Illustrator、Photoshopや素材などを利用してお客様からいただいた手書きオーダーシートや参考データを見ながらデザイン制作。
-                    お客様の希望を叶えるためいろいろな場面や目線から見てなるべくご期待に応えることができるよう対応しました。
-                  </p>
-                  
-                  <div class="red-text">※お見積りはお客様個人情報の保護のため公開は出来ません。</div>
-                </div>
-
-              </fieldset>
-          </div>
-          </div>
-          
-          <div id="contact" class="section mt-4">
-            <div class="center-align mb-3">
-              <div class="content-title center-align">お問合せ</div><span class="title-small-text">contact</span>
-            </div>
-            <div class="center-align mt-2">お電話またはメールでのご相談は下記までお願いいたします。</div>
-            <div class="row row--large-margin row--align-height center-align">
-              <div class="col s12 m6 l6 mt-3" data-aos="zoom-out-right" data-aos-duration="700">
-                <div class="contact-wrap">
-                  <div class="education-icon-img">
-                    <img src="image_svg/mobileicon.svg" alt="携帯">
-                  </div>
-                  <a href="tel:+8109097397288" class="sub-title-right">090-9739-7288</a>
-                </div>
-              </div>
-              <div class="col s12 m6 l6 mt-3" data-aos="zoom-out-left" data-aos-duration="700">
-                <div class="contact-wrap">
-                  <div class="education-icon-img">
-                    <img src="image_svg/mailicon.svg" alt="メール">
-                  </div>
-                  <a href="mailto:myatmonkyaw26@gmail.com" class="sub-title-left">myatmonkyaw26@gmail.com</a>
-                </div>
+              <div class="sub-title-right mt-1">現在</div>
+              <p class="med-text mt-1">株式会社イタミアート（岡山本社）</p>
             </div>
           </div>
         </div>
+
+        <div class="col s12 m6 l6 mt-2">
+          <div class="education-left-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
+            <div class="education-icon-img mt-2">
+              <img src="image_svg/qualification.svg" alt="資格" class="width-full"><br>
+            </div>
+            <div class="center">
+              <div class="sub-title-left mt-2">2017年 3月</div>
+              <p class="med-text mt-1">UCS Account Software(MKS)Training Course</p>
+
+              <div class="sub-title-left mt-2">2017年 4月</div>
+              <p class="med-text mt-1">日本語能力試験N-2 取得</p>
+
+              <div class="sub-title-left mt-2">2018年 4月</div>
+              <p class="med-text mt-1">日本語能力試験N-1 取得</p>
+
+              <div class="sub-title-left mt-1">2019年 8月</div>
+              <p class="med-text mt-1">Web Application Development with Java Course修了</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l6 mt-2">
+          <div class="education-right-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
+            <div class="education-icon-img mt-2">
+              <img src="image_svg/other.svg" alt="その他" class="width-full"><br>
+            </div>
+            <div class="center">
+              <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="700">
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/html5.svg" alt="HTML5">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/css3.svg" alt="CSS3">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/sass.svg" alt="SASS">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/bootstrap.svg" alt="Bootstrap">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/xd.svg" alt="Adobe XD">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/figma.svg" alt="Figma">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/ai.svg" alt="Illustrator">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/javascript.svg" alt="Javascript">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/php.svg" alt="PHP">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/mysql.svg" alt="MYSQL">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/git.svg" alt="Git">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/docker.svg" alt="Docker">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/wordpress.svg" alt="WordPress">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/materialize.svg" alt="Materialize">
+                </div>
+                <div class="tag">
+                  <img class="tag-icon" src="assets/svg/photoshop.svg" alt="Photoshop">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 skill-title center-align bold-text mt-3">履歴書と職務経歴書ダウンロード</div>
+        <div class="col s12 m6 mt-3" data-aos="fade-up" data-aos-duration="800">
+          <div class="cv-dl-btn center-align"><a href="download_file/resume.pdf">履歴書ダウンロード</a></div>
+        </div>
+        <div class="col s12 m6 mt-3" data-aos="fade-up" data-aos-duration="1000">
+          <div class="job-dl-btn center-align"><a href="download_file/job_career.pdf">職務経歴書</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skill" class="container">
+      <div class="center-align mt-4 mb-4">
+        <div class="content-title center-align">スキル</div><span class="title-small-text">skill</span>
+      </div>
+      <div class="row row--large-margin">
+        <div class="col s12 m6 l6">
+          <div class="skill-title bold-text">Web知識</div>
+          <div class="skill-bars">
+            <div class="bar" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-delay="500">
+              <div class="info"><span>HTML</span></div>
+              <div class="progress-line html"><span></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="700" data-aos-delay="700">
+              <div class="info"><span>CSS</span></div>
+              <div class="progress-line css"><span></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="900" data-aos-delay="900">
+              <div class="info"><span>Responsive site</span></div>
+              <div class="progress-line responsive"><span></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1200"
+              data-aos-delay="1200">
+              <div class="info"><span>WordPress</span></div>
+              <div class="progress-line wordpress"><span></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1400"
+              data-aos-delay="1400">
+              <div class="info"><span>PHP</span></div>
+              <div class="progress-line php"><span></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1600"
+              data-aos-delay="1600">
+              <div class="info"><span>JavaScript</span></div>
+              <div class="progress-line javascript"><span></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1800"
+              data-aos-delay="1800">
+              <div class="info"><span>Jquery</span></div>
+              <div class="progress-line jquery"><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l6">
+          <div class="skill-title bold-text">Webに関するツール</div>
+          <div class="skill-bars">
+            <div class="bar" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-delay="500">
+              <div class="info"><span>DreamWeaver</span></div>
+              <div class="progress-line dreamWeaver"><span class="pink_bar"></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="700" data-aos-delay="500">
+              <div class="info"><span>4DBox</span></div>
+              <div class="progress-line dbox"><span class="pink_bar"></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="900" data-aos-delay="500">
+              <div class="info"><span>Adobe Illustrator</span></div>
+              <div class="progress-line illu"><span class="pink_bar"></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1200" data-aos-delay="500">
+              <div class="info"><span>Adobe Photoshop</span></div>
+              <div class="progress-line photo-shop"><span class="pink_bar"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-title bold-text">話せる言語</div>
+          <div class="skill-bars">
+            <div class="bar" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400" data-aos-delay="500">
+              <div class="info"><span>ミャンマー語</span></div>
+              <div class="progress-line myan"><span class="pink_bar"></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1600" data-aos-delay="500">
+              <div class="info"><span>日本語</span></div>
+              <div class="progress-line japan"><span class="pink_bar"></span></div>
+            </div>
+            <div class="bar" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1800" data-aos-delay="500">
+              <div class="info"><span>英語</span></div>
+              <div class="progress-line english"><span class="pink_bar"></span></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="project" class="section mt-4">
+      <div class="center-align mb-3">
+        <div class="content-title center-align">プロジェクト</div><span class="title-small-text">project</span>
+      </div>
+      <div class="center-align mt-2">仕事で制作した案件サイト、仕事内容を掲載しています。</div>
+      <div class="row row--large-margin row--align-height ">
+        <div class="col s12 m12 l6 mt-3" data-aos="zoom-in" data-aos-duration="700">
+          <fieldset>
+            <legend class="project-title left-wrap-color center-align bold-text">自社サイト作成</legend>
+            <div class="fieldset_wrap">
+              <div class="project-description-wrap purble_bg_color">
+                <span class="bold-text purble-text">注文ページ作成、通販商品サイト制作、リニューアルサイトの制作、運用サイトの更新</span>
+                <p class="small-text mt-1 mb-0">
+                  使用技術：<br>
+                <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+                  data-aos-duration="700">
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/html5.svg" alt="HTML5"><span class="tag-name">HTML5</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/css3.svg" alt="CSS3"><span class="tag-name">CSS3</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/javascript.svg" alt="Javascript"><span
+                      class="tag-name">Javascript</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/php.svg" alt="PHP"><span class="tag-name">PHP</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/jquery.svg" alt="jQuery"><span class="tag-name">jQuery</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/materialize.svg" alt="Materialize"><span
+                      class="tag-name">Materialize</span>
+                  </div>
+                </div>
+                制作期間：ページ内容によって（2日～1ヶ月）<br>
+                担当役割：コーディングを担当
+                </p>
+              </div>
+              <p class="bold-text">内容説明</p>
+              <p>
+                既に公開されているサイトのリニューアル制作や新商品の注文ペー
+                ジ作成は案件となり、商品販売ページは通販専用ツールを用いて制作。複数人でコーディングを行う体制だったので、この案件のみに適用するコーディングルールを設け制作を進めた。
+                デザインの部分で、いくつか同じデザインの派生ページが発生した為、マークアップ・スタイル記述はパーツを細分化して、どのブロックでも使える形でコーディング。注文ページ制作の際には、PHPやjQueryを使ったことがあけど、あまり詳しくないので、分からないことがる時はネット上での検索や自習しながらタスク対応しました。
+              </p>
+
+              <div class="link-to-site left-wrap-color"><a href="https://www.i-nobori.com/">自社サイトを見る</a></div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="col s12 m12 l6 mt-3" data-aos="zoom-in" data-aos-duration="700">
+          <fieldset>
+            <legend class="project-title right-wrap-color center-align bold-text">レスポンシブ対応</legend>
+            <div class="fieldset_wrap">
+              <div class="project-description-wrap pink_bg_color">
+                <span class="bold-text pink_text">新商品クッションページコーディング、ランディングページ制作、コラムページコーディング</span>
+                <p class="small-text mt-1 mb-0">
+                  使用技術：<br>
+                <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+                  data-aos-duration="700">
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/html5.svg" alt="HTML5"><span class="tag-name">HTML5</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/css3.svg" alt="CSS3"><span class="tag-name">CSS3</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/javascript.svg" alt="Javascript"><span
+                      class="tag-name">Javascript</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/php.svg" alt="PHP"><span class="tag-name">PHP</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/jquery.svg" alt="jQuery"><span class="tag-name">jQuery</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/materialize.svg" alt="Materialize"><span
+                      class="tag-name">Materialize</span>
+                  </div>
+                </div>
+                制作期間：ページ内容によって（2日～5日）<br>
+                担当役割：コーディングを担当
+                </p>
+              </div>
+              <p class="bold-text">内容説明</p>
+              <p>
+                のぼり旗や横断幕、タペストリー等印刷系の販促グッズを紹介する広告用ランディングページや商品のクッションページのレスポンシブ対応を制作。
+                基本はデザインの方からもらったラフを参考に作成。HTML側の記述はソース構造を複雑化しない様に心掛け、CSS側はモバイルファーストで組み込みを行い、テキストもなるべくCSSで再現できる部分は対応を行った。またブレイクポイントがPC/SPのみの指定だったがタブレットで閲覧することも想像し、基本SPデザインを表示しつつ見易さの部分を配慮してCSS調整を行った。レスポンシブの対応自体はメディアクエリやMaterializeを使っている。
+              </p>
+
+              <div class="link-to-site right-wrap-color"><a href="https://www.i-maku.com/page/lp_ashiba">LPページを見る</a>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="col s12 m12 l6 mt-3" data-aos="zoom-in" data-aos-duration="700">
+          <fieldset>
+            <legend class="project-title left-wrap-color center-align bold-text">自社公式サイト</legend>
+            <div class="fieldset_wrap">
+              <div class="project-description-wrap purble_bg_color">
+                <span class="bold-text purble-text">自社HP、採用サイト、オウンドメディアページ作成</span>
+
+                <p class="small-text mt-1 mb-0">
+                  使用技術：<br>
+                <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+                  data-aos-duration="700">
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/html5.svg" alt="HTML5"><span class="tag-name">HTML5</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/css3.svg" alt="CSS3"><span class="tag-name">CSS3</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/javascript.svg" alt="Javascript"><span
+                      class="tag-name">Javascript</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/php.svg" alt="PHP"><span class="tag-name">PHP</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/wordpress.svg" alt="WordPress"><span
+                      class="tag-name">WordPress</span>
+                  </div>
+                </div>
+                制作期間：約1ヶ月～2ヶ月<br>
+                担当役割：コーディングを担当
+                </p>
+
+              </div>
+
+
+
+              <p class="bold-text">内容説明</p>
+              <p>
+                WordPress使用の自社公式サイトや採用サイト、オウンドメディアサイトの作成。WordPressテーマのカスタマイズやプラグインの使用で、サイト修正やページ追加を対応しました。
+                必要であれば、サイト内に新しいCSSやJavaScriptの追加も行いました。
+              </p>
+
+              <div class="link-to-site left-wrap-color"><a href="https://www.itamiarts.co.jp/">公式サイトを見る</a></div>
+
+            </div>
+          </fieldset>
+        </div>
+        <div class="col s12 m12 l6 mt-3" data-aos="zoom-in" data-aos-duration="700">
+          <fieldset>
+            <legend class="project-title right-wrap-color center-align bold-text">のぼり旗デザイン製作</legend>
+            <div class="fieldset_wrap">
+              <div class="project-description-wrap pink_bg_color">
+                <span class="bold-text pink_text">お客様のデザイン依頼の対応</span>
+                <p class="small-text mt-1 mb-0">
+                  使用技術：<br>
+                <div class="skills-wrapper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+                  data-aos-duration="700">
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/ai.svg" alt="Illustrator"><span
+                      class="tag-name">Illustrator</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/xd.svg" alt="Adobe XD"><span class="tag-name">Adobe XD</span>
+                  </div>
+                  <div class="tag">
+                    <img class="tag-icon" src="assets/svg/photoshop.svg" alt="Photoshop"><span
+                      class="tag-name">Photoshop</span>
+                  </div>
+                </div>
+                制作期間：デザインによって（1日～2日）<br>
+                担当役割：デザイン制作
+                </p>
+              </div>
+              <p class="bold-text">内容説明</p>
+              <p>
+                Adobe Illustrator、Photoshopや素材などを利用してお客様からいただいた手書きオーダーシートや参考データを見ながらデザイン制作。
+                お客様の希望を叶えるためいろいろな場面や目線から見てなるべくご期待に応えることができるよう対応しました。
+              </p>
+
+              <div class="red-text">※お見積りはお客様個人情報の保護のため公開は出来ません。</div>
+            </div>
+
+          </fieldset>
+        </div>
+      </div>
+
+      <div id="contact" class="section mt-4">
+        <div class="center-align mb-3">
+          <div class="content-title center-align">お問合せ</div><span class="title-small-text">contact</span>
+        </div>
+        <div class="center-align mt-2">お電話またはメールでのご相談は下記までお願いいたします。</div>
+        <div class="row row--large-margin row--align-height center-align">
+          <div class="col s12 m6 l6 mt-3" data-aos="zoom-out" data-aos-duration="700">
+            <div class="contact-wrap">
+              <div class="education-icon-img">
+                <img src="image_svg/mobileicon.svg" alt="携帯">
+              </div>
+              <a href="tel:+8109097397288" class="sub-title-right">090-9739-7288</a>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 mt-3" data-aos="zoom-out" data-aos-duration="700">
+            <div class="contact-wrap">
+              <div class="education-icon-img">
+                <img src="image_svg/mailicon.svg" alt="メール">
+              </div>
+              <a href="mailto:myatmonkyaw26@gmail.com" class="sub-title-left">myatmonkyaw26@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer class="center-align mt-4">
         <span class="pink_text">MMK'</span><span class="purple_text">Portfolio</span>
       </footer>
@@ -494,24 +522,25 @@
       <script type="text/javascript" src="script/main.js"></script>
 
       <script>
-      var textWrapper = document.querySelector('.name-logo');
-      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-      anime.timeline({loop: true})
-      .add({
-        targets: '.name-logo .letter',
-        scale: [4,1],
-        opacity: [0,1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 950,
-        delay: (el, i) => 70*i
-      }).add({
-        targets: '.name-logo',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
+        var textWrapper = document.querySelector('.name-logo');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        anime.timeline({ loop: true })
+          .add({
+            targets: '.name-logo .letter',
+            scale: [4, 1],
+            opacity: [0, 1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 950,
+            delay: (el, i) => 70 * i
+          }).add({
+            targets: '.name-logo',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
       </script>
-    </body>
-  </html>
+</body>
+
+</html>
