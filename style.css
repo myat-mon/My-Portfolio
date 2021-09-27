@@ -63,6 +63,9 @@ header {
 .header-menu ul li a:hover {
   background-color: rgb(255 249 252)!important;
 }
+#sidenav-trigger {
+  display: none;
+}
 /* 問い合わせ  */
 .contact-btn {
   margin-top: 0.6rem;
