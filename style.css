@@ -176,6 +176,11 @@ header {
   background: rgba(238, 189, 255, 0.35);
   right: 0!important;
 }
+@media (max-width: 768px){
+  .introduction-wrap {
+    padding:1rem 1.3rem 1rem 1rem;
+  }
+}
 @media (max-width: 600px){
   .introduction-wrap {
     padding: 0.3rem;
