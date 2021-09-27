@@ -209,9 +209,9 @@ header {
 #skill {
   width: 980px;
 }
-@media (max-width: 600px){
+@media only screen and (max-width: 600px){
   #skill {
-    width: 350px!important;
+    width: 80%!important;
   }
   .education-left-col, .education-right-col {
     padding: 1.5rem 1rem 4rem 1rem;
@@ -252,14 +252,10 @@ header {
   margin: auto;
 }
 .percent-text1, .percent-text2 {
-  /* display: inline; */
   font-size: 0.8rem;
   margin-bottom: 0!important;
   margin-top: 0.5rem;
 }
-/* .percent-text2 {
-  margin-left: 20%;
-} */
 .large-text {
   font-size: 1.25rem;
 }
@@ -390,7 +386,7 @@ header {
 }
 @media only screen and (max-width: 600px) { 
   #project {
-    width: 100%;
+    width: 80%;
   }
   .container .row.row--large-margin > .col {
     padding: 0!important;
@@ -461,12 +457,10 @@ fieldset {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  /* padding: 10px 20px; */
   background: #ffffff94;
   box-shadow: 0px 20px 30px rgb(25 25 46 / 10%);
   border-radius: 16px;
   width: fit-content;
-  /* margin: 5px 3px; */
   position: relative;
 }
 
